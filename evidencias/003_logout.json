@@ -1,0 +1,10 @@
+{
+    "fecha": "2026-11-20T00:47:41.299153",
+    "metodo": "POST",
+    "endpoint": "logout",
+    "request": null,
+    "status_code": 200,
+    "response": {
+        "message": "Sesión cerrada"
+    }
+}

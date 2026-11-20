@@ -1,0 +1,79 @@
+{
+    "fecha": "2026-11-20T00:47:34.870226",
+    "metodo": "POST",
+    "endpoint": "pacientes",
+    "request": {
+        "codigo_paciente": "PAC-QA-E500EB59",
+        "ci": "[REDACTADO]",
+        "nombres": "[REDACTADO]",
+        "apellido_paterno": "[REDACTADO]",
+        "apellido_materno": "[REDACTADO]",
+        "fecha_nacimiento": "[REDACTADO]",
+        "sexo_id": 1,
+        "grupo_sanguineo_id": null,
+        "estado_civil_id": null,
+        "telefono": "[REDACTADO]",
+        "correo": "[REDACTADO]",
+        "direccion": "[REDACTADO]",
+        "contacto_emergencia": "[REDACTADO]",
+        "telefono_emergencia": "[REDACTADO]",
+        "parentesco_id": null
+    },
+    "status_code": 201,
+    "response": {
+        "message": "Paciente registrado correctamente",
+        "data": {
+            "usuario_id": 17,
+            "codigo_paciente": "PAC-QA-E500EB59",
+            "ci": "[REDACTADO]",
+            "nombres": "[REDACTADO]",
+            "apellido_paterno": "[REDACTADO]",
+            "apellido_materno": "[REDACTADO]",
+            "fecha_nacimiento": "[REDACTADO]",
+            "sexo_id": 1,
+            "grupo_sanguineo_id": null,
+            "estado_civil_id": null,
+            "telefono": "[REDACTADO]",
+            "correo": "[REDACTADO]",
+            "direccion": "[REDACTADO]",
+            "contacto_emergencia": "[REDACTADO]",
+            "telefono_emergencia": "[REDACTADO]",
+            "parentesco_id": null,
+            "estado": true,
+            "updated_at": "2026-11-20T04:47:34.000000Z",
+            "created_at": "2026-11-20T04:47:34.000000Z",
+            "id": 15,
+            "usuario": {
+                "id": 17,
+                "rol_id": 9,
+                "username": "82042905",
+                "correo": "[REDACTADO]",
+                "estado": "ACTIVO",
+                "primer_acceso": true,
+                "ultimo_login": null,
+                "created_at": "2026-11-20T04:47:34.000000Z",
+                "updated_at": "2026-11-20T04:47:34.000000Z"
+            },
+            "sexo": {
+                "id": 1,
+                "nombre": "[REDACTADO]",
+                "estado": true
+            },
+            "grupo_sanguineo": null,
+            "estado_civil": null,
+            "parentesco": null,
+            "historia_clinica": {
+                "id": 15,
+                "paciente_id": 15,
+                "numero_historia": "HC-PAC-QA-E500EB59",
+                "antecedentes_personales": null,
+                "antecedentes_familiares": null,
+                "alergias": null,
+                "observaciones": "[REDACTADO]",
+                "estado": true,
+                "created_at": "2026-11-20T04:47:34.000000Z",
+                "updated_at": "2026-11-20T04:47:34.000000Z"
+            }
+        }
+    }
+}

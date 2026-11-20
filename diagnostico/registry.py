@@ -1,0 +1,22 @@
+# Rutas GET que se identificaron en el route:list compartido durante el proyecto.
+# verificado_en_proyecto indica presencia en route:list, no éxito de ejecución.
+MODULOS = {
+ "Pacientes":{"descripcion":"Consulta de pacientes y estructura de respuesta.","endpoints":[{"nombre":"Listado de pacientes","path":"pacientes","expected":[200],"verificado_en_proyecto":True}]},
+ "Médicos":{"descripcion":"Consulta de personal médico.","endpoints":[{"nombre":"Listado de médicos","path":"medicos","expected":[200],"verificado_en_proyecto":True}]},
+ "Personal":{"descripcion":"Consulta del personal del centro.","endpoints":[{"nombre":"Listado de personal","path":"personal","expected":[200],"verificado_en_proyecto":True}]},
+ "Usuarios":{"descripcion":"Consulta de usuarios del sistema.","endpoints":[{"nombre":"Listado de usuarios","path":"usuarios","expected":[200],"verificado_en_proyecto":True}]},
+ "Especialidades":{"descripcion":"Consulta de especialidades médicas.","endpoints":[{"nombre":"Listado de especialidades","path":"especialidades","expected":[200],"verificado_en_proyecto":True}]},
+ "Consultorios":{"descripcion":"Consulta de consultorios.","endpoints":[{"nombre":"Listado de consultorios","path":"consultorios","expected":[200],"verificado_en_proyecto":True}]},
+ "Horarios":{"descripcion":"Horarios médicos y bloqueos.","endpoints":[{"nombre":"Horarios médicos","path":"horarios-medicos","expected":[200],"verificado_en_proyecto":True},{"nombre":"Bloqueos de horario","path":"bloqueos-horario","expected":[200],"verificado_en_proyecto":True}]},
+ "Citas":{"descripcion":"Consulta de citas e historial.","endpoints":[{"nombre":"Listado de citas","path":"citas","expected":[200],"verificado_en_proyecto":True},{"nombre":"Historial de citas","path":"historial-citas","expected":[200],"verificado_en_proyecto":True}]},
+ "Consultas":{"descripcion":"Consulta de atenciones médicas.","endpoints":[{"nombre":"Listado de consultas","path":"consultas","expected":[200],"verificado_en_proyecto":True}]},
+ "Historia clínica":{"descripcion":"Consulta de historias, archivos y signos vitales.","endpoints":[{"nombre":"Historias clínicas","path":"historias-clinicas","expected":[200],"verificado_en_proyecto":True},{"nombre":"Archivos clínicos","path":"archivos-clinicos","expected":[200],"verificado_en_proyecto":True},{"nombre":"Signos vitales","path":"signos-vitales","expected":[200],"verificado_en_proyecto":True}]},
+ "Recetas":{"descripcion":"Consulta de recetas médicas.","endpoints":[{"nombre":"Listado de recetas","path":"recetas","expected":[200],"verificado_en_proyecto":True}]},
+ "Farmacia e inventario":{"descripcion":"Medicamentos, movimientos, compras y proveedores.","endpoints":[{"nombre":"Medicamentos","path":"medicamentos","expected":[200],"verificado_en_proyecto":True},{"nombre":"Movimientos de inventario","path":"movimientos-inventario","expected":[200],"verificado_en_proyecto":True},{"nombre":"Compras","path":"compras","expected":[200],"verificado_en_proyecto":True},{"nombre":"Proveedores","path":"proveedores","expected":[200],"verificado_en_proyecto":True}]},
+ "Caja y pagos":{"descripcion":"Pagos y cierres de caja.","endpoints":[{"nombre":"Pagos de citas","path":"pago-citas","expected":[200],"verificado_en_proyecto":True},{"nombre":"Pagos de recetas","path":"pago-recetas","expected":[200],"verificado_en_proyecto":True},{"nombre":"Cierres de caja","path":"cierres-caja","expected":[200],"verificado_en_proyecto":True}]},
+ "Inteligencia artificial":{"descripcion":"Consulta de análisis realizados por IA.","endpoints":[{"nombre":"Análisis IA","path":"analisis-ia","expected":[200],"verificado_en_proyecto":True}]},
+ "Auditoría":{"descripcion":"Consulta de registros de auditoría.","endpoints":[{"nombre":"Auditorías","path":"auditorias","expected":[200],"verificado_en_proyecto":True}]},
+ "Notificaciones":{"descripcion":"Consulta de notificaciones del dashboard.","endpoints":[{"nombre":"Notificaciones dashboard","path":"notificaciones-dashboard","expected":[200],"verificado_en_proyecto":True}]},
+ "Configuración":{"descripcion":"Consulta de configuración del sistema.","endpoints":[{"nombre":"Configuración del sistema","path":"configuracion-sistema","expected":[200],"verificado_en_proyecto":True}]},
+ "Seguridad":{"descripcion":"Verificación de sesión autenticada.","endpoints":[{"nombre":"Usuario autenticado","path":"me","expected":[200],"verificado_en_proyecto":True}]}
+}

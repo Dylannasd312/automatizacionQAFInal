@@ -1,0 +1,28 @@
+proyecto:
+  nombre: "Centro de Salud Respiratorio"
+  tipo: "Automatización de pruebas Backend"
+  framework: "Laravel"
+  lenguaje: "Python"
+  base_datos: "PostgreSQL"
+
+api:
+  timeout: 30
+  formato: "application/json"
+
+autenticacion:
+  tipo: "Bearer Token"
+  proveedor: "Laravel Sanctum"
+
+ejecucion:
+  detener_si_falla_login: true
+  continuar_si_falla_prueba: true
+
+evidencias:
+  directorio: "evidencias"
+  guardar_request: true
+  guardar_response: true
+
+reportes:
+  directorio: "reports"
+  html: true
+  pdf: true

@@ -1,0 +1,43 @@
+{
+  "metadata": {
+    "run_id": "c0c036682e80",
+    "ambiente": "QA local",
+    "tipo": "FUNCIONAL",
+    "suite": "Smoke",
+    "inicio": "2026-11-20T00:40:37",
+    "fin": "2026-11-20T00:40:38",
+    "destinatario": "dylann.oscar.asd@gmail.com",
+    "total": 1,
+    "conteos": {
+      "PASS": 1,
+      "FAIL": 0,
+      "SKIPPED": 0,
+      "NOT RUN": 0
+    },
+    "porcentaje_exito": 100.0,
+    "duracion_segundos": 0.781
+  },
+  "casos": [
+    {
+      "id": "TC-001",
+      "nombre": "Registro de paciente",
+      "tipo": "FUNCIONAL",
+      "suite": "Regression",
+      "estado": "PASS",
+      "objetivo": "Registrar paciente válido.",
+      "precondiciones": "Usuario autenticado y catálogos maestros disponibles.",
+      "datos_prueba": "Datos QA configurados desde el Dashboard",
+      "pasos": [
+        "Enviar POST /pacientes",
+        "Validar HTTP 201",
+        "Comprobar ID, usuario e historia clínica"
+      ],
+      "esperado": "Paciente creado y relacionado.",
+      "obtenido": "Paciente registrado correctamente. ID: 12",
+      "resultado": "Paciente registrado correctamente. ID: 12",
+      "duracion": 0.781,
+      "evidencia": "",
+      "error_tipo": ""
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+    "fecha": "2026-11-20T00:31:55.175670",
+    "metodo": "POST",
+    "endpoint": "citas",
+    "request": {
+        "paciente_id": 11,
+        "medico_id": 1,
+        "especialidad_id": 1,
+        "consultorio_id": 1,
+        "fecha": "2026-11-23",
+        "hora": "08:40:00",
+        "origen": "RECEPCION",
+        "observaciones": "[REDACTADO]"
+    },
+    "status_code": 422,
+    "response": {
+        "message": "The fecha cita field is required. (and 1 more error)",
+        "errors": {
+            "fecha_cita": [
+                "The fecha cita field is required."
+            ],
+            "hora_cita": [
+                "The hora cita field is required."
+            ]
+        }
+    }
+}

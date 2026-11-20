@@ -1,0 +1,26 @@
+
+# Variables de entorno y credenciales
+.env
+.env.*
+!.env.example
+
+# Entorno virtual de Python
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Archivos temporales
+*.log
+.DS_Store
+Thumbs.db
+
+# Evidencias y reportes generados
+*.tmp

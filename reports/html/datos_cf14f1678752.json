@@ -1,0 +1,85 @@
+{
+  "metadata": {
+    "run_id": "cf14f1678752",
+    "ambiente": "QA local",
+    "tipo": "FUNCIONAL",
+    "suite": "Smoke",
+    "inicio": "2026-11-20T00:30:42",
+    "fin": "2026-11-20T00:30:45",
+    "destinatario": "No solicitado",
+    "total": 3,
+    "conteos": {
+      "PASS": 1,
+      "FAIL": 1,
+      "SKIPPED": 1,
+      "NOT RUN": 0
+    },
+    "porcentaje_exito": 33.33,
+    "duracion_segundos": 1.864
+  },
+  "casos": [
+    {
+      "id": "TC-001",
+      "nombre": "Registro de paciente",
+      "tipo": "FUNCIONAL",
+      "suite": "Regression",
+      "estado": "PASS",
+      "objetivo": "Registrar paciente válido.",
+      "precondiciones": "Usuario autenticado y catálogos maestros disponibles.",
+      "datos_prueba": "Datos QA configurados desde el Dashboard",
+      "pasos": [
+        "Enviar POST /pacientes",
+        "Validar HTTP 201",
+        "Comprobar ID, usuario e historia clínica"
+      ],
+      "esperado": "Paciente creado y relacionado.",
+      "obtenido": "Paciente registrado correctamente. ID: 10",
+      "resultado": "Paciente registrado correctamente. ID: 10",
+      "duracion": 0.721,
+      "evidencia": "evidencias\\002_pacientes.json",
+      "error_tipo": ""
+    },
+    {
+      "id": "TC-003",
+      "nombre": "Creación de cita",
+      "tipo": "FUNCIONAL",
+      "suite": "Regression",
+      "estado": "FAIL",
+      "objetivo": "Crear cita en horario disponible.",
+      "precondiciones": "Paciente y horario disponibles.",
+      "datos_prueba": "Datos QA configurados desde el Dashboard",
+      "pasos": [
+        "Consultar horarios y citas",
+        "Elegir espacio libre",
+        "Enviar POST /citas",
+        "Validar estado POR_PAGAR"
+      ],
+      "esperado": "Cita creada con estado POR_PAGAR.",
+      "obtenido": "TestAssertionError: Se esperaba HTTP [201], pero se recibió HTTP 422. Respuesta: {\"message\":\"The fecha cita field is required. (and 1 more error)\",\"errors\":{\"fecha_cita\":[\"The fecha cita field is required.\"],\"hora_cita\":[\"The hora cita field is required.\"]}}",
+      "resultado": "TestAssertionError: Se esperaba HTTP [201], pero se recibió HTTP 422. Respuesta: {\"message\":\"The fecha cita field is required. (and 1 more error)\",\"errors\":{\"fecha_cita\":[\"The fecha cita field is required.\"],\"hora_cita\":[\"The hora cita field is required.\"]}}",
+      "duracion": 1.142,
+      "evidencia": "evidencias\\003_horarios-medicos.json, evidencias\\004_citas.json, evidencias\\005_citas.json",
+      "error_tipo": "FUNCIONAL"
+    },
+    {
+      "id": "TC-005",
+      "nombre": "Pago de cita",
+      "tipo": "FUNCIONAL",
+      "suite": "Integration",
+      "estado": "SKIPPED",
+      "objetivo": "Registrar pago de cita pendiente.",
+      "precondiciones": "Cita creada y método de pago válido.",
+      "datos_prueba": "Datos QA configurados desde el Dashboard",
+      "pasos": [
+        "Enviar pago",
+        "Validar respuesta y estado"
+      ],
+      "esperado": "Pago registrado correctamente.",
+      "obtenido": "Prerrequisitos no aprobados: TC-003",
+      "resultado": "Prerrequisitos no aprobados: TC-003",
+      "duracion": 0.001,
+      "evidencia": "",
+      "error_tipo": "DEPENDENCIA"
+    }
+  ]
+}
